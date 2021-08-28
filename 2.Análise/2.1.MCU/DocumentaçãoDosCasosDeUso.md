@@ -36,5 +36,5 @@
 - Um administrador pode vincular usuários à sua empresa, delimitando o técnico que receberá chamados dos usuários à esta pertencentes.
 ### CDU 13: Cadastrar categorias de chamados
 - Um administrador pode cadastrar as categorias/tipos de um chamado (Ex: instação de impressora, substituição de teclado, etc...)
-### CDU 13: Definir prioridades
+### CDU 14: Definir prioridades
 - Um administrador pode definir a prioridade de uma categoria, informando ao técnico o prazo esperado para que este tipo de chamado seja atendido
