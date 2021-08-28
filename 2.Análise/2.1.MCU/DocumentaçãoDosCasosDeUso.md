@@ -11,25 +11,30 @@
 
 ## Casos de Uso
 ### CDU 01: Cadastrar um chamado
-
-### CDU 02: Listar chamados anteriores
-
-### CDU 03: Acessar FAQ para problemas comuns
-
+- Um usuário pode cadastrar um chamado, fornecendo as informações necessárias através do CDU 02.
+### CDU 02: Preencher formulário de chamado
+- O usuário deve preencher este formulário informando o tipo do chamado (Ex: instalar impressora), selecionando tipos pré-cadastrados, além de fornecer demais informações
+### CDU 03: Listar histórico de chamados
+- O usuário pode listar seus chamados anteriores, apenas para fins de verificação do prazo, ou demais necessidades.
 ### CDU 04: Receber código de acompanhamento
-
-### CDU 05: Poder se cadastrar e fazer login
-
-### CDU 06: Atender um chamado
-
-### CDU 07: Alterar estado do chamado
-
-### CDU 08: Listar chamados
-
-### CDU 09: Cadastrar dados da empresa/departamento
-
-### CDU 10: Cadastrar/remover/editar usuários
-
-### CDU 11: Cadastrar/remover/editar técnicos
-
-### CDU 12: Cadastrar/remover/editar chamados
+- O usuário recebe um código de acompanhamento ao realizar um chamado, através deste, pode encontrar de forma mais fácil seus chamados no histórico.
+### CDU 05: Fornecer identificação
+- O usuário deve fornecer identificação, além das informações técnicas do chamado(CDU 02).
+### CDU 06: Listar chamados
+- O técnico ou o administrador responsável por uma empresa pode listar os chamados referentes à esta.
+### CDU 07: Receber aviso de chamados pendentes
+- O técnico pode receber um aviso/notificação de que um chamado pendente ainda não foi concluído.
+### CDU 08: Atender um chamado
+- O técnico pode atender um chamado, resultando na alteração de seu estado (CDU 09)
+### CDU 09: Alterar estado de um chamado
+- O técnico ou uma ação do sistema pode alterar o estado de um chamado (Ex: concluído, pendente...).
+### CDU 10: Gerar relatórios
+- Um administrador pode gerar relatórios referente aos atendimentos ou à natureza dos chamados.
+### CDU 11: Cadastrar sua empresa
+- Um administrador pode cadastrar sua empresa, sendo este o ambiente ao qual seus usuários (CDU 12) estarão vinculados
+### CDU 12: Vincular técnicos e usuários à sua empresa
+- Um administrador pode vincular usuários à sua empresa, delimitando o técnico que receberá chamados dos usuários à esta pertencentes.
+### CDU 13: Cadastrar categorias de chamados
+- Um administrador pode cadastrar as categorias/tipos de um chamado (Ex: instação de impressora, substituição de teclado, etc...)
+### CDU 13: Definir prioridades
+- Um administrador pode definir a prioridade de uma categoria, informando ao técnico o prazo esperado para que este tipo de chamado seja atendido
