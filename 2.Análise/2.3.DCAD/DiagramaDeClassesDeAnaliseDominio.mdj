@@ -1921,19 +1921,6 @@
 							"text": "1"
 						},
 						{
-							"_type": "UMLTextView",
-							"_id": "AAAAAAF70LCorLxfggM=",
-							"_parent": {
-								"$ref": "AAAAAAF7wqyt2DRzSw4="
-							},
-							"font": "Arial;13;0",
-							"left": 920,
-							"top": 536,
-							"width": 60,
-							"height": 25,
-							"text": "1..*"
-						},
-						{
 							"_type": "UMLAssociationView",
 							"_id": "AAAAAAF70LM6YMZKDp0=",
 							"_parent": {
@@ -2239,7 +2226,7 @@
 							"top": 776,
 							"width": 60,
 							"height": 25,
-							"text": "1..*"
+							"text": "1"
 						},
 						{
 							"_type": "UMLTextView",
@@ -2252,7 +2239,7 @@
 							"top": 568,
 							"width": 60,
 							"height": 25,
-							"text": "1"
+							"text": "1..*"
 						},
 						{
 							"_type": "UMLAssociationView",
