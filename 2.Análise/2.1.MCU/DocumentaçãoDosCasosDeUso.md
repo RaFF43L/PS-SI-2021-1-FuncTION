@@ -140,3 +140,9 @@
 - **Pós-condição:** os relatórios serão apresentados.
 - **Fluxo Principal:** ao clicar em gerar relatório, esta tarefa executará cálculos referentes ao tempo de atendimento de chamados considerados semelhantes. O sistema considera semelhantes se: possuem a mesma tag, palavras semelhantes no título ou mesma tag e mesmo usuário.
 - **Fluxo de exceção:** em caso de erro de validação ou do sistema, o administrador receberá uma mensagem informando ao realizar a ação de gerar relatório.
+
+### CDU 19: Cadastrar departamentos
+- **Descrição:** um administrador pode cadastrar departamentos da organização, contendo nome, local e prioridade.
+- **Pré-condição:** um administrador está logado em sua conta administrativa e clicou em cadastrar departamento.
+- **Fluxo principal:** após clicar em cadastrar departamento, o administrador preencherá um formulário com os campos citados. Após clicar em concluir, as informações serão validadas e adicionadas ao sistema.
+- **Fluxo de exceção:** em caso de erro de validação ou do sistema, o administrador receberá uma mensagem informando o erro.
