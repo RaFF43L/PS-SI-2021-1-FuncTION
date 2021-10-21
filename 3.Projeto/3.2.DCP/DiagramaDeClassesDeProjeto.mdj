@@ -3484,7 +3484,7 @@
 							"top": 2656,
 							"width": 60,
 							"height": 25,
-							"text": "1..*"
+							"text": "1"
 						},
 						{
 							"_type": "UMLAssociationView",
@@ -17118,7 +17118,8 @@
 									"_parent": {
 										"$ref": "AAAAAAF8haH43ZQX1CM="
 									},
-									"name": "texto"
+									"name": "texto",
+									"type": ""
 								},
 								{
 									"_type": "UMLAttribute",
@@ -17126,7 +17127,8 @@
 									"_parent": {
 										"$ref": "AAAAAAF8haH43ZQX1CM="
 									},
-									"name": "posicao"
+									"name": "posicao",
+									"type": ""
 								}
 							]
 						},
@@ -17214,7 +17216,8 @@
 									},
 									"name": "consulta",
 									"stereotype": "set get",
-									"visibility": "private"
+									"visibility": "private",
+									"type": ""
 								}
 							],
 							"operations": [
