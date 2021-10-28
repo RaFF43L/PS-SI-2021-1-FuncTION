@@ -1,6 +1,5 @@
 
 import React, { useState } from 'react'
-
 import './style.css'
 
 
@@ -31,9 +30,12 @@ function Login() {
                <input
                
                   type="email"
+                  required
                   placeholder="Digite um email"
                   value={email}
-                  onChange={e => setEmail(e.target.value)}
+                  onChange={e => setEmail(e.target.value)
+                   
+                  }
                />
             </div>
 

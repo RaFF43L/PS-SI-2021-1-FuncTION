@@ -1,14 +1,15 @@
 
 import React from 'react'
 import './App.css';
-import Input from './components/Input';
-import Login from './pages/Login';
-import Register from './pages/Register';
+import Router from './routes';
+import ErrorBoundary from './components/ErrorBoundary';
 
-
-function App() {
+function App(): JSX.Element {
   return (
     <div className="app">
+      <ErrorBoundary>
+       <Router/>
+       </ErrorBoundary>
     </div>
   );
 }

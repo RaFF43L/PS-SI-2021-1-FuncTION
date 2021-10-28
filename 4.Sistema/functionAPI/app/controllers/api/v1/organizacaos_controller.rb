@@ -3,7 +3,7 @@ class Api::V1::OrganizacaosController < ApplicationController
 	# GET /organizacaos
 	def index
 		@organizacaos = Organizacao.all
-		render json: @users
+		render json: @organizacaos
 	end
 
 	# GET /organizacaos/:id
