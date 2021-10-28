@@ -6,6 +6,7 @@ import './style.css'
 
 import { MdEmail, MdLock } from "react-icons/md"
 import { HiEye, HiEyeOff } from "react-icons/hi"
+import Register from '../Register'
 
 function Login() {
    const [email, setEmail] = useState("")
@@ -28,6 +29,7 @@ function Login() {
             <div className="login-loginInputEmail">
                <MdEmail />
                <input
+               
                   type="email"
                   placeholder="Digite um email"
                   value={email}

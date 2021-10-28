@@ -1,13 +1,14 @@
 
 import React from 'react'
 import './App.css';
+import Input from './components/Input';
+import Login from './pages/Login';
+import Register from './pages/Register';
 
-import Login from '../src/pages/Login'
 
 function App() {
   return (
     <div className="app">
-       <Login />
     </div>
   );
 }
