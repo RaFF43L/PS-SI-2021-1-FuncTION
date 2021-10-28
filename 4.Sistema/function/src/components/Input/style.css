@@ -5,7 +5,8 @@
     padding: 10px;
     min-width: 450px;
     min-height: 20px;
-    color: #fff
+    color: #fff;
+    margin-top: 5px;
 }
 .inputContainer {
     display: flex;
