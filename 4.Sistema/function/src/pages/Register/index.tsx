@@ -5,7 +5,9 @@ import './style.css'
 import { MdEmail, MdLock, MdAccountCircle, MdBuild } from "react-icons/md"
 import { HiEye, HiEyeOff } from "react-icons/hi"
 import api from '../../services/api'
+import { useHistory } from 'react-router'
 import axios from 'axios'
+import { saveToken } from '../../services/auth'
 
 interface Departamento {
   id: number
@@ -40,7 +42,7 @@ function Login() {
       e.preventDefault()
       setShow(!show);
    }
-
+   const history = useHistory();
    async function handleSubmit(e: { preventDefault: () => void }): Promise<void> {
       const usuario = {
           email,
@@ -51,9 +53,10 @@ function Login() {
           "departamento_id": Number(departamento),
           "organizacao_id": Number(organizacao)
       }
-      console.log({"usuario": usuario})
       const response = await api.post('/usuarios', {"usuario": usuario})
-      console.log(response)
+      saveToken(response.headers.authorization)
+      
+      history.push("/app");
    }
 
    useEffect(() => {

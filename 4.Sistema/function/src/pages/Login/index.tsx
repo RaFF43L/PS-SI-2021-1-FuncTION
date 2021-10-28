@@ -2,19 +2,32 @@
 import React, { useState } from 'react'
 import './style.css'
 
-
+import { Link, useHistory } from 'react-router-dom'
 import { MdEmail, MdLock } from "react-icons/md"
 import { HiEye, HiEyeOff } from "react-icons/hi"
 import Register from '../Register'
+import api from '../../services/api'
+import { saveToken } from '../../services/auth'
 
 function Login() {
    const [email, setEmail] = useState("")
    const [password, setPassword] = useState("")
    const [show, setShow] = useState(false)
-
+   const history = useHistory();
    const handleClick = (e: { preventDefault: () => void }): void => {
       e.preventDefault()
       setShow(!show);
+   }
+
+   async function handleSubmit(e: { preventDefault: () => void }): Promise<void> {
+      const usuario = {
+          email,
+          password,
+      }
+      const response = await api.post('/usuarios/sign_in', {"usuario": usuario})
+      saveToken(response.headers.authorization)
+      
+      history.push("/app");
    }
 
    return (
@@ -62,15 +75,16 @@ function Login() {
                </div>
             </div>
 
-            <button type="submit">
+            <button type="submit"
+            onClick={handleSubmit}>
                Entrar
             </button>
 
             <h4>Não tenho conta!</h4>
 
-            <button type="submit">
+            <Link className="btn-link" to={"/register"}>
                Cadastrar
-            </button>
+            </Link>
          </div>
       </div>
    )
