@@ -25,13 +25,8 @@ default: &default
   host: 127.0.0.1
 
 development:
-  adapter: postgresql
-  encoding: unicode
-  pool: 5
-  username: dev
-  password: dev
-  database: functionapi_development
-  host: localhost
+  <<: *default
+  database: functionAPI_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.

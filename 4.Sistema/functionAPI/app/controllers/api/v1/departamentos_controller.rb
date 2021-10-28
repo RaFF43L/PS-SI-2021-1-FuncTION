@@ -1,8 +1,9 @@
 class Api::V1::DepartamentosController < ApplicationController
+	respond_to :json
 	# GET /departamentos
 	def index
 		@departamentos = Departamento.all
-		render json: @users
+		render json: @departamentos
 	end
 
 	# GET /departamentos/:id

@@ -11,6 +11,7 @@ Rails.application.routes.draw do
       resources :categorias
       resources :organizacaos
       resources :usuarios
+      resources :departamentos
     end
   end
 end

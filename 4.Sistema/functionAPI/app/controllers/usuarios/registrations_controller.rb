@@ -14,6 +14,7 @@ class Usuarios::RegistrationsController < Devise::RegistrationsController
     end
   
     def register_failed
+      puts(@user)
       render json: { message: "Ocorreu um erro, verifique os parâmetros e tente novamente." }
     end
   end
