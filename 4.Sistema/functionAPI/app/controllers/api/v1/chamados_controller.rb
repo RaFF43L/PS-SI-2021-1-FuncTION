@@ -3,13 +3,13 @@ class Api::V1::ChamadosController < ApplicationController
 	# GET /chamados
 	def index
 		@chamados = Chamado.all
-		render json: @users
+		render json: @chamados
 	end
 
 	# GET /chamados/:id
 	def show
 		@chamado = Chamado.find(params[:id])
-		render json: @user
+		render json: @chamado
 	end
 
 	# POST /chamados

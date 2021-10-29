@@ -9,7 +9,7 @@ class Api::V1::DepartamentosController < ApplicationController
 	# GET /departamentos/:id
 	def show
 		@departamento = Departamento.find(params[:id])
-		render json: @user
+		render json: @departamento
 	end
 
 	# POST /departamentos

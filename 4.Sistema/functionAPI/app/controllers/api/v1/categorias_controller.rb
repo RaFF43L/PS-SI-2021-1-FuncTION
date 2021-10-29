@@ -3,13 +3,13 @@ class Api::V1::CategoriasController < ApplicationController
 	# GET /categorias
 	def index
 		@categorias = Categoria.all
-		render json: @users
+		render json: @categorias
 	end
 
 	# GET /categorias/:id
 	def show
 		@categoria = Categoria.find(params[:id])
-		render json: @user
+		render json: @categoria
 	end
 
 	# POST /categorias

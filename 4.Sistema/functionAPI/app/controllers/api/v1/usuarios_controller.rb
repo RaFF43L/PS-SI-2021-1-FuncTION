@@ -3,13 +3,13 @@ class Api::V1::UsuariosController < ApplicationController
 	# GET /usuarios
 	def index
 		@usuarios = Usuario.all
-		render json: @users
+		render json: @usuarios
 	end
 
 	# GET /usuarios/:id
 	def show
 		@usuario = Usuario.find(params[:id])
-		render json: @user
+		render json: @usuario
 	end
 
 	# POST /usuarios

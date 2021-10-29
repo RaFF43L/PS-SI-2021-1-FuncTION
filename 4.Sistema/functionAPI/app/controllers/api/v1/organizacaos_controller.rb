@@ -9,7 +9,7 @@ class Api::V1::OrganizacaosController < ApplicationController
 	# GET /organizacaos/:id
 	def show
 		@organizacao = Organizacao.find(params[:id])
-		render json: @user
+		render json: @organizacao
 	end
 
 	# POST /organizacaos
