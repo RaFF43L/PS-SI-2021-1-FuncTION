@@ -35,7 +35,7 @@ class Api::V1::UsuariosController < ApplicationController
 
 	# DELETE /usuarios/:id
 	def destroy
-		@usuario = User.find(params[:id])
+		@usuario = Usuario.find(params[:id])
 		if @usuario
 			@usuario.destroy
 			render json: { message: "Usuario apagado." }, status: 200

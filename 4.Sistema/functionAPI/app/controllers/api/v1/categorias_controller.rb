@@ -35,7 +35,7 @@ class Api::V1::CategoriasController < ApplicationController
 
 	# DELETE /categorias/:id
 	def destroy
-		@categoria = User.find(params[:id])
+		@categoria = Categoria.find(params[:id])
 		if @categoria
 			@categoria.destroy
 			render json: { message: "Categoria apagada." }, status: 200

@@ -35,7 +35,7 @@ class Api::V1::DepartamentosController < ApplicationController
 
 	# DELETE /departamentos/:id
 	def destroy
-		@departamento = User.find(params[:id])
+		@departamento = Departamento.find(params[:id])
 		if @departamento
 			@departamento.destroy
 			render json: { message: "Departamento apagado." }, status: 200

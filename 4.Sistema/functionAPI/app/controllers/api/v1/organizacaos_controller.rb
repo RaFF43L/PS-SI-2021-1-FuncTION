@@ -35,7 +35,7 @@ class Api::V1::OrganizacaosController < ApplicationController
 
 	# DELETE /organizacaos/:id
 	def destroy
-		@organizacao = User.find(params[:id])
+		@organizacao = Organizacao.find(params[:id])
 		if @organizacao
 			@organizacao.destroy
 			render json: { message: "Organização apagada." }, status: 200

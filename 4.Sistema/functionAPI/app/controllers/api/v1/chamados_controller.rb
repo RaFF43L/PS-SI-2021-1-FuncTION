@@ -35,7 +35,7 @@ class Api::V1::ChamadosController < ApplicationController
 
 	# DELETE /chamados/:id
 	def destroy
-		@chamado = User.find(params[:id])
+		@chamado = Chamado.find(params[:id])
 		if @chamado
 			@chamado.destroy
 			render json: { message: "Chamado apagado." }, status: 200
